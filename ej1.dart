@@ -33,7 +33,7 @@ class HomePage extends StatelessWidget {
         children: [
           CategoryItem(
             category: 'Alimentos',
-            imageUrl: './assets/images/food.png', // Imagen local
+            imageUrl: 'assets/images/food.png', // Imagen local
             name: 'Pizza',
             font: GoogleFonts.openSans(),
           ),
@@ -77,7 +77,7 @@ class CategoryItem extends StatelessWidget {
         width: 50,
         height: 50,
         errorBuilder: (context, error, stackTrace) {
-          return Image.asset('./assets/images/placeholder.png', width: 50, height: 50);
+          return Image.asset('assets/images/placeholder.png', width: 50, height: 50);
         },
       ),
       title: Text(
